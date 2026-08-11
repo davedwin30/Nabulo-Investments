@@ -17,6 +17,7 @@
     --card-bg:       #FFFFFF; /* lighter card background for contrast */
     --btn-text:      #FFFFFF;
     --btn-bg:        var(--green-deep);
+    --page-bg:       #E2EFE7; /* slightly darker light green page background */
     --tan:           #C99A3B;
     --red-tag:       #C0392B;
 
@@ -32,7 +33,7 @@
   html{ scroll-behavior: smooth; }
   body{
     margin:0;
-    background: var(--cream);
+    background: var(--page-bg);
     color: var(--ink);
     font-family: var(--font-body);
     line-height: 1.5;
