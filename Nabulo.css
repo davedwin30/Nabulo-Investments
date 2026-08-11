@@ -254,14 +254,18 @@
   /* Category chips removed — using section headings and product cards instead */
 
   /* ============================================
-     PRODUCT SECTIONS
+     MAIN / PRODUCT SECTIONS
      ============================================ */
+  /* Main container spans full viewport width; `.wrap` centers inner content */
+  main{ width: 100%; margin: 0; padding-bottom: 60px; }
+
+  /* Section spacing — slightly tighter and more consistent */
   .section{
-    padding: 78px 24px 20px;
+    padding: 64px 24px;
   }
   .section-head{
-    max-width: 640px;
-    margin: 0 auto 42px;
+    max-width: 720px;
+    margin: 0 auto 36px;
     text-align:center;
   }
   .eyebrow{
@@ -279,22 +283,26 @@
   }
   .section-head h2{
     margin-top: 14px;
-    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-size: clamp(1.9rem, 4vw, 2.6rem);
     color: var(--ink);
+    letter-spacing: 0.2px;
   }
   .section-head p{
-    margin-top: 10px;
+    margin-top: 12px;
     color: #4a4536;
     font-weight: 500;
+    max-width: 56ch;
+    margin-left: auto; margin-right: auto;
   }
 
   /* Product grid */
   .grid{
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 34px 22px;
-    max-width: 1000px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 28px 22px;
+    max-width: 1020px;
     margin: 0 auto;
+    align-items: start;
   }
 
   /* Signature element: price-tag card, shaped with a
@@ -305,19 +313,19 @@
     background: var(--card-bg);
     border: 1px solid rgba(18,17,14,0.06);
     border-radius: 14px;
-    padding: 24px;
+    padding: 20px 20px 18px;
     box-shadow: var(--shadow-soft);
-    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
   }
   .tag:hover{
-    transform: translateY(-8px);
-    border-color: var(--green);
-    box-shadow: 0 18px 30px rgba(32,28,16,0.14);
+    transform: translateY(-6px);
+    border-color: rgba(11,61,46,0.12);
+    box-shadow: 0 20px 34px rgba(18,17,14,0.12);
   }
   .tag .name{
     font-family: var(--font-display);
-    font-weight: 700;
-    font-size: 1.12rem;
+    font-weight: 800;
+    font-size: 1.15rem;
     color: var(--ink);
     margin-bottom: 6px;
   }
