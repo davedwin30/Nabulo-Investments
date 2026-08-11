@@ -235,21 +235,17 @@
     z-index: 1;
   }
   .ticker-track{
-    display:inline-block;
-    padding: 12px 0;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 16px;
+    padding: 16px 0;
     font-family: var(--font-display);
     font-weight: 600;
     font-size: 0.95rem;
-    animation: scroll-left 26s linear infinite;
+    animation: none;
   }
-  .ticker-track span{ margin: 0 28px; }
-  @keyframes scroll-left{
-    0%{ transform: translateX(0); }
-    100%{ transform: translateX(-50%); }
-  }
-  @media (prefers-reduced-motion: reduce){
-    .ticker-track{ animation: none; }
-  }
+  .ticker-track span{ margin: 0; }
 
   /* ============================================
      CATEGORY QUICK-NAV CHIPS
@@ -392,17 +388,16 @@
   .tag.sweet .price{ color: var(--red-tag); }
 
   .badge-wholesale{
-    position:absolute;
-    top: -12px; right: -10px;
+    display: inline-flex;
+    padding: 6px 12px;
+    margin-bottom: 16px;
     background: var(--green-deep);
     color: var(--yellow-pale);
     font-family: var(--font-display);
     font-weight: 700;
-    font-size: 0.68rem;
-    padding: 5px 10px;
+    font-size: 0.75rem;
     border-radius: 999px;
     border: 2px solid var(--ink);
-    transform: rotate(6deg);
   }
 
   /* ============================================
