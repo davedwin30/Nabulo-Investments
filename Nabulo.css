@@ -8,12 +8,15 @@
     --yellow:        #F7B500;
     --yellow-deep:   #DE9E00;
     --yellow-pale:   #FFE9AE;
-    --green-deep:    #1F6E3E;
-    --green:         #2F8B4A;
-    --green-bright:  #49A85C;
-    --ink:           #201C10;
+    --green-deep:    #0B3D2E; /* darker forest green */
+    --green:         #165C3A; /* main forest green */
+    --green-bright:  #2A804F; /* accent green */
+    --ink:           #12110E;
     --cream:         #FFFBEE;
     --card:          #FFFDF7;
+    --card-bg:       #FFFFFF; /* lighter card background for contrast */
+    --btn-text:      #FFFFFF;
+    --btn-bg:        var(--green-deep);
     --tan:           #C99A3B;
     --red-tag:       #C0392B;
 
@@ -21,8 +24,8 @@
     --font-body: 'Manrope', system-ui, sans-serif;
 
     --radius: 14px;
-    --shadow-soft: 0 6px 18px rgba(32,28,16,0.10);
-    --shadow-tag: 0 8px 0 rgba(32,28,16,0.06);
+    --shadow-soft: 0 8px 24px rgba(18,17,14,0.14);
+    --shadow-tag: 0 10px 0 rgba(18,17,14,0.06);
   }
 
   *{ box-sizing: border-box; }
@@ -112,12 +115,12 @@
     text-decoration:none;
     padding: 6px 2px;
     border-bottom: 3px solid transparent;
-    transition: border-color .15s ease;
+    transition: border-color .15s ease, color .15s ease;
   }
-  .navlinks a:hover{ border-color: var(--green); }
+  .navlinks a:hover{ border-color: var(--green-bright); color: var(--green-deep); }
   .nav-cta{
-    background: var(--green-deep);
-    color: var(--yellow-pale);
+    background: var(--btn-bg);
+    color: var(--btn-text);
     font-weight: 800;
     font-family: var(--font-display);
     text-decoration: none;
@@ -125,8 +128,8 @@
     border-radius: 999px;
     font-size: 0.92rem;
     white-space: nowrap;
-    box-shadow: var(--shadow-tag);
-    border: 2px solid var(--ink);
+    box-shadow: 0 10px 0 rgba(0,0,0,0.06);
+    border: 2px solid transparent;
   }
   .navlinks-mobile{ display:none; }
 
@@ -213,9 +216,10 @@
   }
   .btn:hover{ transform: translateY(-2px); }
   .btn-primary{
-    background: var(--yellow);
-    color: var(--ink);
-    box-shadow: var(--shadow-tag);
+    background: var(--btn-bg);
+    color: var(--btn-text);
+    box-shadow: 0 12px 0 rgba(0,0,0,0.06);
+    border-color: transparent;
   }
   .btn-ghost{
     background: transparent;
@@ -334,12 +338,12 @@
      alternating tilt, punched "hole" near the point. */
   .tag{
     position: relative;
-    background: var(--card);
-    border: 1px solid rgba(32,28,16,0.12);
-    border-radius: 18px;
-    padding: 28px 24px;
+    background: var(--card-bg);
+    border: 1px solid rgba(18,17,14,0.06);
+    border-radius: 14px;
+    padding: 24px;
     box-shadow: var(--shadow-soft);
-    transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
   }
   .tag:hover{
     transform: translateY(-8px);
