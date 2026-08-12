@@ -14,19 +14,91 @@ const productData = {
     title: "Washing Powder",
     note: "Trusted laundry brands, sold per pack or wholesale carton.",
     emoji: "🧺",
-    items: ["Sunlight", "Omo", "Ariel", "Toss", "Persil", "White Star"],
+    items: [
+      { name: "Sunlight", image: "Sunlight.jpg" },
+      { name: "Omo", image: "Omo.jpg" },
+      { name: "Ariel", image: "" },
+      { name: "Toss", image: "" },
+      { name: "Persil", image: "" },
+      { name: "White Star", image: "" },
+    ],
   },
   barSoap: {
     title: "Bar Washing Soap",
     note: "Everyday laundry bars, sold singly or by the carton.",
     emoji: "🧼",
-    items: ["White Star", "Chapa Nyota", "Mukwano Bright", "Ntake"],
+    items: [
+      { name: "White Star", image: "White Star.jpg" },
+      { name: "Chapa Nyota", image: "" },
+      { name: "Mukwano Bright", image: "" },
+      { name: "Ntake", image: "" },
+    ],
   },
   bathingSoap: {
     title: "Bathing Soap",
     note: "Daily care soaps for the whole family.",
     emoji: "🛁",
     items: ["Lifebuoy", "Geisha", "Dettol", "Imperial Leather"],
+  },
+  toothpastes: {
+    title: "Toothpastes",
+    note: "Everyday oral care for the whole family.",
+    emoji: "🦷",
+    items: ["Colgate", "Closeup", "Pepsodent", "Aquafresh"],
+  },
+  toiletPaper: {
+    title: "Toilet Paper",
+    note: "Soft tissue rolls for home and shop restocking.",
+    emoji: "🧻",
+    items: ["Comfort", "Piao Piao", "Rina", "Softy"],
+  },
+  cookingOil: {
+    title: "Cooking Oil",
+    note: "Everyday cooking oils in bottles and jerrycans.",
+    emoji: "🫙",
+    items: ["Mukwano Cooking Oil", "Sunseed Cooking Oil", "Fortune Oil", "Golden Fry"],
+  },
+  sugar: {
+    title: "Sugar",
+    note: "Locally milled sugar, sold loose or by the kilo.",
+    emoji: "🧂",
+    items: ["Lugazi Sugar", "Kakira Sugar"],
+  },
+  milk: {
+    title: "Milk",
+    note: "UHT cartons and powdered milk for daily use.",
+    emoji: "🥛",
+    items: ["Jesa UHT Milk", "Nido Powdered Milk", "Fresh Dairy UHT", "Lato Milk"],
+  },
+  soda: {
+    title: "Soft Drinks",
+    note: "Chilled and ambient soft drinks by the bottle or crate.",
+    emoji: "🥤",
+    items: ["Coca-Cola", "Pepsi", "Fanta", "Sprite", "Mirinda"],
+  },
+  water: {
+    title: "Bottled Water",
+    note: "Single bottles and multipacks for home or events.",
+    emoji: "💧",
+    items: ["Rwenzori Water", "Westlake Water", "Aqua Sipi", "Refrigerated multipacks"],
+  },
+  notebooks: {
+    title: "Notebooks & Exercise Books",
+    note: "Exercise books and art books for every grade.",
+    emoji: "📓",
+    items: ["Exercise books (32-page)", "Exercise books (64-page)", "Art & drawing books", "Manila books"],
+  },
+  writingInstruments: {
+    title: "Pens, Pencils & Markers",
+    note: "Writing tools for school and office.",
+    emoji: "✏️",
+    items: ["Ballpoint pens", "HB pencils", "Highlighters", "Markers"],
+  },
+  artSupplies: {
+    title: "Art & Geometry",
+    note: "Geometry sets and shading tools for art and math class.",
+    emoji: "📐",
+    items: ["Geometry sets", "Shading pencils", "Rulers", "Crayons"],
   },
   bulkRice: {
     title: "Bulk Rice",
@@ -87,66 +159,6 @@ const productData = {
     emoji: "🌾",
     items: ["1kg bags", "2kg bags", "Family friendly packs", "Extra-fine milling"],
   },
-  toothpastes: {
-    title: "Toothpastes",
-    note: "Daily oral care brands and whitening varieties.",
-    emoji: "🪥",
-    items: ["Colgate", "Closeup", "Pepsodent", "Sensodyne", "Local whitening gels"],
-  },
-  toiletPaper: {
-    title: "Toilet Paper",
-    note: "Household rolls, bulk packs and jumbo commercial rolls.",
-    emoji: "🧻",
-    items: ["Single rolls", "4-roll packs", "12-roll family packs", "Jumbo commercial rolls"],
-  },
-  cookingOil: {
-    title: "Cooking Oil",
-    note: "Vegetable and sunflower oils popular with households and traders.",
-    emoji: "🛢️",
-    items: ["Mukwano vegetable oil", "Sunflower oil", "Refined blends", "Bulk tins for traders"],
-  },
-  sugar: {
-    title: "Sugar",
-    note: "Refined and raw sugar in retail packs and trader sacks.",
-    emoji: "🍚",
-    items: ["Refined granulated", "Caster sugar", "Trader sacks (50kg)", "Local refinery bags"],
-  },
-  milk: {
-    title: "Milk",
-    note: "Fresh, UHT and powdered milk commonly used across Uganda.",
-    emoji: "🥛",
-    items: ["Fresh milk (local suppliers)", "UHT milk (Parmalat/brands)", "Milk powder — Nido", "Sterilised/long-life"],
-  },
-  soda: {
-    title: "Soft Drinks",
-    note: "Popular carbonated beverages in bottles and cans.",
-    emoji: "🥤",
-    items: ["Coca‑Cola", "Pepsi", "Fanta", "Local cola and fruit sodas"],
-  },
-  water: {
-    title: "Bottled Water",
-    note: "Single bottles and multipacks for home and events.",
-    emoji: "💧",
-    items: ["500ml bottles", "1.5L bottles", "6-pack multipacks", "Large jugs for events"],
-  },
-  notebooks: {
-    title: "Notebooks & Exercise Books",
-    note: "School exercise books, A4 and A5 notebooks for students.",
-    emoji: "📚",
-    items: ["A5 exercise books", "A4 ruled notebooks", "Exam pads", "Hardcover copy books"],
-  },
-  writingInstruments: {
-    title: "Pens, Pencils & Markers",
-    note: "Everyday writing instruments and classroom markers.",
-    emoji: "✏️",
-    items: ["HB pencils", "Ballpoint pens", "Permanent markers", "Highlighters"],
-  },
-  artSupplies: {
-    title: "Art & Geometry",
-    note: "Crayons, geometry sets and glue for school art projects.",
-    emoji: "🎨",
-    items: ["Crayons & color pencils", "Geometry sets", "Glue sticks", "Poster paints"],
-  },
   sweetsSingle: {
     title: "Assorted Sweets — Single",
     note: "Sold by the piece, perfect for a quick treat.",
@@ -200,16 +212,22 @@ const productData = {
     noteEl.textContent = data.note;
 
     gridEl.innerHTML = data.items
-      .map(
-        (name) => `
+      .map((item) => {
+        const name = typeof item === "string" ? item : item.name;
+        const image = typeof item === "string" ? "" : item.image;
+        const imageMarkup = image
+          ? `<img src="${image}" alt="${name}" loading="lazy" />`
+          : `<span>${data.emoji}</span>`;
+
+        return `
         <div class="variety-tile">
           <div class="variety-photo" style="--tile-color:${tileColor}">
-            <span>${data.emoji}</span>
+            ${imageMarkup}
           </div>
           <div class="variety-name">${name}</div>
         </div>
-      `
-      )
+      `;
+      })
       .join("");
 
     overlay.classList.add("open");

@@ -4,6 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nabulo Investments — Wholesale & Retail, Seeta</title>
+
+    <!-- Description + Open Graph tags: these control how the page
+         looks when shared as a WhatsApp/Facebook link preview,
+         which matters a lot for a business that mostly gets found
+         through people forwarding the link. -->
+    <meta
+      name="description"
+      content="Nabulo Investments — wholesale & retail shop in Seeta, Mukono. Washing supplies, pantry staples, drinks, school supplies, rice, beans, flour and sweets."
+    />
+    <meta property="og:title" content="Nabulo Investments — Wholesale & Retail, Seeta" />
+    <meta
+      property="og:description"
+      content="Your neighbourhood wholesale and retail shop in Seeta. Quality and quantity, from washing supplies to food, school supplies and market essentials."
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Simple brand-colour favicon, no image asset needed -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231F6E3E'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle' fill='%23F7B500' font-family='sans-serif' font-weight='800'%3EN%3C/text%3E%3C/svg%3E"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,6 +42,8 @@
         </a>
         <ul class="navlinks">
           <li><a href="#cleaning">Household</a></li>
+          <li><a href="#pantry">Pantry</a></li>
+          <li><a href="#school">School</a></li>
           <li><a href="#rice">Groceries</a></li>
           <li><a href="#sweets">Sweets</a></li>
           <li><a href="#location">Location</a></li>
@@ -31,19 +55,24 @@
     <main>
       <section class="hero" id="top">
         <div class="hero-inner">
-          
+          <span class="hero-badge">Wholesale hub — Seeta, Mukono</span>
           <h1>NABULO<br />INVESTMENTS</h1>
           <p class="tagline">
             Your neighbourhood wholesale and retail shop. We have quality and
-            quantity from washing supplies to different food stuffs and
-            condiments.
+            quantity from washing supplies to food, school supplies, and
+            market essentials.
           </p>
           <div class="hero-actions">
             <a href="#cleaning" class="btn btn-primary">Browse Our Goods</a>
+            <a
+              href="https://wa.me/256700000000"
+              class="btn btn-whatsapp"
+              target="_blank"
+              rel="noopener"
+              >Chat on WhatsApp</a
+            >
             <a href="#location" class="btn btn-ghost">Visit The Shop</a>
           </div>
-        </div>
-       
         </div>
       </section>
 
@@ -69,7 +98,7 @@
               aria-label="View Washing Powder brands"
             >
               <div class="name">Washing Powder</div>
-              
+              <div class="unit">Household & wholesale</div>
               <p class="teaser">Sunlight, Omo & 4 more brands</p>
               <span class="tap-hint">Tap to view all →</span>
             </article>
@@ -83,7 +112,7 @@
               aria-label="View Bar Washing Soap brands"
             >
               <div class="name">Bar Washing Soap</div>
-              
+              <div class="unit">Household & wholesale</div>
               <p class="teaser">White Star, Chapa Nyota & 2 more</p>
               <span class="tap-hint">Tap to view all →</span>
             </article>
@@ -97,11 +126,11 @@
               aria-label="View Bathing Soap brands"
             >
               <div class="name">Bathing Soap</div>
-              
+              <div class="unit">Daily care</div>
               <p class="teaser">Lifebuoy, Geisha & 2 more</p>
               <span class="tap-hint">Tap to view all →</span>
             </article>
-            
+
             <article
               class="tag clean"
               data-key="toothpastes"
@@ -111,7 +140,7 @@
               aria-label="View Toothpaste brands"
             >
               <div class="name">Toothpastes</div>
-              
+              <div class="unit">Oral care</div>
               <p class="teaser">Colgate, Closeup, Pepsodent & more</p>
               <span class="tap-hint">Tap to view all →</span>
             </article>
@@ -125,6 +154,7 @@
               aria-label="View Toilet Paper brands"
             >
               <div class="name">Toilet Paper</div>
+              <div class="unit">Tissue & paper goods</div>
               <p class="teaser">Comfort, Piao Piao & more</p>
               <span class="tap-hint">Tap to view all →</span>
             </article>
@@ -141,9 +171,9 @@
             <span class="eyebrow">Pantry & Drinks</span>
             <h2>Everyday pantry staples and beverages</h2>
             <p>
-              Cooking oil, sugar, milk, bottled water and soft drinks — stocked
-              in retail packs and wholesale quantities. Tap a card to see
-              varieties and brands.
+              Cooking oil, sugar, milk, bottled water and soft drinks —
+              stocked in retail packs and wholesale quantities. Tap a card to
+              see varieties and brands.
             </p>
           </div>
           <div class="grid">
@@ -156,6 +186,7 @@
               aria-label="View cooking oil brands"
             >
               <div class="name">Cooking Oil</div>
+              <div class="unit">Bottles & jerrycans</div>
               <p class="teaser">Mukwano Cooking Oil, Sunseed Cooking Oil</p>
               <span class="tap-hint">Tap to view all →</span>
             </article>
@@ -169,7 +200,7 @@
               aria-label="View sugar types"
             >
               <div class="name">Sugar</div>
-              
+              <div class="unit">Loose & packed</div>
               <p class="teaser">Lugazi Sugar, Kakira Sugar</p>
               <span class="tap-hint">Tap to view all →</span>
             </article>
@@ -197,7 +228,7 @@
               aria-label="View soft drinks"
             >
               <div class="name">Soft Drinks</div>
-              
+              <div class="unit">Bottles & crates</div>
               <p class="teaser">Coca-Cola, Pepsi, Fanta and others</p>
               <span class="tap-hint">Tap to view all →</span>
             </article>
@@ -228,8 +259,8 @@
             <span class="eyebrow">School Supplies</span>
             <h2>Scholastic materials for every student</h2>
             <p>
-              Notebooks, pens and pencils stocked
-              for schools, students and teachers.
+              Notebooks, pens and pencils stocked for schools, students and
+              teachers.
             </p>
           </div>
           <div class="grid">
@@ -242,8 +273,8 @@
               aria-label="View notebooks and exercise books"
             >
               <div class="name">Notebooks & Exercise Books</div>
-              
-              <p class="teaser">School exercise books, Art books </p>
+              <div class="unit">Scholastic stationery</div>
+              <p class="teaser">School exercise books, Art books</p>
               <span class="tap-hint">Tap to view all →</span>
             </article>
 
@@ -256,8 +287,8 @@
               aria-label="View pens, pencils and markers"
             >
               <div class="name">Pens, Pencils & Markers</div>
-              
-              <p class="teaser">Ballpoint pens, HB pencils and  markers </p>
+              <div class="unit">Scholastic stationery</div>
+              <p class="teaser">Ballpoint pens, HB pencils and markers</p>
               <span class="tap-hint">Tap to view all →</span>
             </article>
 
@@ -270,7 +301,7 @@
               aria-label="View art and geometry supplies"
             >
               <div class="name">Art & Geometry</div>
-              
+              <div class="unit">Scholastic stationery</div>
               <p class="teaser">Geometry Sets and Shading tools</p>
               <span class="tap-hint">Tap to view all →</span>
             </article>
@@ -305,8 +336,6 @@
               <p class="teaser">Super Rice, Kaiso Rice & 3 more</p>
               <span class="tap-hint">Tap to view all →</span>
             </article>
-
-           
           </div>
         </div>
       </section>
@@ -338,8 +367,6 @@
               <p class="teaser">Sugar beans, Red kidney & 3 more</p>
               <span class="tap-hint">Tap to view all →</span>
             </article>
-
-           
           </div>
         </div>
       </section>
@@ -387,7 +414,7 @@
             </article>
           </div>
         </div>
-        
+      </section>
 
       <!-- ============ SWEETS ============ -->
       <section class="section" id="sweets">
@@ -447,7 +474,10 @@
         </div>
       </section>
 
-      <div class="banner">
+      <!-- Wrapped in .wrap so it gets the same side gutter as every
+           other section on mobile, instead of touching the screen edges. -->
+      <div class="wrap">
+        <div class="banner">
           <div>
             <h3>Buying for your own shop or restaurant?</h3>
             <p>
@@ -457,7 +487,7 @@
           </div>
           <a href="#location" class="btn btn-primary">Talk To Us</a>
         </div>
-      </section>
+      </div>
 
       <div class="stitch-divider"></div>
 
@@ -474,16 +504,22 @@
             </p>
             <ul class="info-list">
               <li>
-                <span class="ico">📍</span> Seeta Trading Centre, Mukono
-                District, Uganda
+                <span class="ico">📍</span> 1km on Bukerere Rd off Jinja Road,
+                Mukono District, Uganda
               </li>
               <li>
                 <span class="ico">🕑</span> Open Monday–Saturday, 8:00 AM –
                 5:00 PM
               </li>
               <li>
-                <span class="ico">📞</span> +256 700 000 000 (call or
-                WhatsApp)
+                <span class="ico">📞</span>
+                <a href="tel:+256700000000">+256 700 000 000</a>
+              </li>
+              <li>
+                <span class="ico">💬</span>
+                <a href="https://wa.me/256700000000" target="_blank" rel="noopener"
+                  >Chat with us on WhatsApp</a
+                >
               </li>
             </ul>
           </div>
