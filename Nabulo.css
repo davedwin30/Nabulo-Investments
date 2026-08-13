@@ -8,9 +8,9 @@
     --yellow:        #F7B500;
     --yellow-deep:   #DE9E00;
     --yellow-pale:   #FFE9AE;
-    --green-deep:    #1F6E3E;
-    --green:         #2F8B4A;
-    --green-bright:  #49A85C;
+    --green-deep:    #123F2A;
+    --green:         #1E5D3B;
+    --green-bright:  #2F7B4D;
     --ink:           #201C10;
     --cream:         #FFFBEE;
     --card:          #FFFDF7;
@@ -161,22 +161,8 @@
     text-align:center;
     position:relative;
   }
-  .hero-badge{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    background: var(--yellow);
-    color: var(--ink);
-    font-weight:800;
-    font-size: 0.85rem;
-    padding: 7px 16px;
-    border-radius: 999px;
-    border: 2px solid var(--ink);
-    transform: rotate(-2deg);
-    box-shadow: var(--shadow-tag);
-  }
   .hero h1{
-    margin-top: 22px;
+    margin-top: 0;
     font-size: clamp(2.6rem, 7vw, 4.6rem);
     font-weight: 800;
     color: var(--yellow);
@@ -345,18 +331,17 @@
   .tag{
     position: relative;
     background: var(--card);
-    border: 2.5px solid var(--ink);
-    border-radius: var(--radius);
-    padding: 26px 24px 22px;
-    box-shadow: var(--shadow-soft);
-    transform: rotate(-1.6deg);
-    transition: transform .15s ease, box-shadow .15s ease;
+    border: 2px solid rgba(32,28,16,0.9);
+    border-radius: 16px;
+    padding: 24px 20px 18px;
+    box-shadow: 0 8px 18px rgba(32,28,16,0.08);
+    transform: none;
+    transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
   }
-  .grid .tag:nth-child(even){ transform: rotate(1.4deg); }
-  .grid .tag:nth-child(3n){ transform: rotate(-1deg); }
-  .tag:hover{ transform: rotate(0deg) translateY(-4px); box-shadow: 0 12px 22px rgba(32,28,16,0.16); }
+  .grid .tag:nth-child(even), .grid .tag:nth-child(3n){ transform: none; }
+  .tag:hover{ transform: translateY(-2px); box-shadow: 0 12px 22px rgba(32,28,16,0.12); }
   .tag:focus-visible{
     outline: 3px solid var(--green-deep);
     outline-offset: 4px;
@@ -410,20 +395,6 @@
   }
   .tag.clean .price{ color: var(--yellow-deep); }
   .tag.sweet .price{ color: var(--red-tag); }
-
-  .badge-wholesale{
-    position:absolute;
-    top: -12px; right: -10px;
-    background: var(--green-deep);
-    color: var(--yellow-pale);
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: 0.68rem;
-    padding: 5px 10px;
-    border-radius: 999px;
-    border: 2px solid var(--ink);
-    transform: rotate(6deg);
-  }
 
   /* ============================================
      WHOLESALE BANNER
@@ -562,9 +533,54 @@
      RESPONSIVE
      ============================================ */
   @media (max-width: 760px){
+    .nav{
+      padding: 12px 16px;
+      gap: 10px;
+    }
+    .brand{
+      font-size: 1.05rem;
+    }
+    .brand .mark{
+      width: 30px;
+      height: 30px;
+      font-size: 0.95rem;
+    }
     .navlinks{ display:none; }
+    .nav-cta{ display:none; }
+    .hero{
+      padding: 42px 16px 0;
+    }
+    .hero h1{
+      font-size: clamp(2.2rem, 14vw, 3.4rem);
+      line-height: 1.04;
+    }
+    .hero p.tagline{
+      font-size: 1rem;
+      max-width: 100%;
+    }
+    .hero-actions{
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+    .btn{
+      width: 100%;
+      justify-content: center;
+      padding: 13px 18px;
+    }
+    .section{
+      padding: 52px 16px 16px;
+    }
+    .grid{
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+    .tag{
+      padding: 20px 18px 16px;
+      border-radius: 14px;
+    }
     .loc-grid{ grid-template-columns: 1fr; }
-    .banner{ flex-direction:column; align-items:flex-start; }
+    .banner{ flex-direction:column; align-items:flex-start; padding: 24px 18px; }
   }
 
   /* Keyboard focus visibility */
